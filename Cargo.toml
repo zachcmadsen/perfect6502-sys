@@ -4,6 +4,13 @@ version = "0.1.0"
 edition = "2021"
 links = "perfect6502"
 build = "build.rs"
+authors = ["Zach Madsen <zachcmadsen@gmail.com"]
+license = "MIT"
+description = "Rust bindings to perfect6502"
+repository = "https://github.com/zachcmadsen/perfect6502-sys"
+readme = "README.md"
+keywords = ["6502", "perfect6502"]
+categories = ["external-ffi-bindings"]
 
 [lib]
 doctest = false
