@@ -5,5 +5,8 @@ edition = "2021"
 links = "perfect6502"
 build = "build.rs"
 
+[lib]
+doctest = false
+
 [build-dependencies]
 cc = "1.0"
