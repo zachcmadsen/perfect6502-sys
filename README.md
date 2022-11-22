@@ -1,5 +1,6 @@
 # perfect6502-sys
 
+[![CI][ci_badge]][ci]
 [![crates.io][crate_badge]][crate]
 [![docs.rs][docs_badge]][docs]
 [![license][license_badge]][license]
@@ -25,6 +26,8 @@ The following were helpful for learning about how to create a sys crate:
 
 <!-- Badges -->
 
+[ci_badge]: https://github.com/zachcmadsen/perfect6502-sys/workflows/CI/badge.svg?branch=main
+[ci]: https://github.com/zachcmadsen/perfect6502-sys/actions?query=branch%3Amain
 [crate_badge]: https://img.shields.io/crates/v/perfect6502-sys.svg
 [crate]: https://crates.io/crates/perfect6502-sys
 [docs_badge]: https://img.shields.io/docsrs/perfect6502-sys/latest.svg
