@@ -1,3 +1,5 @@
+//! Bindings to perfect6502.
+
 #![no_std]
 
 include!("./bindings.rs");
