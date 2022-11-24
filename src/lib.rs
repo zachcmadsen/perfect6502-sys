@@ -15,13 +15,13 @@ mod tests {
 
             assert_eq!(readA(state), 0x00);
 
-            // Write 0x3000 to the reset vector.
+            // Write 0x0200 to the reset vector.
             memory[0xfffc] = 0x00;
-            memory[0xfffd] = 0x30;
+            memory[0xfffd] = 0x02;
 
-            // Write lda #$ef to 0x3000.
-            memory[0x3000] = 0xa9;
-            memory[0x3001] = 0xef;
+            // Write lda #$ef to 0x0200.
+            memory[0x0200] = 0xa9;
+            memory[0x0201] = 0xef;
 
             // Execute the 9-cycle reset sequence.
             for _ in 0..9 {
@@ -29,7 +29,7 @@ mod tests {
                 step(state);
             }
 
-            assert_eq!(readPC(state), 0x3000);
+            assert_eq!(readPC(state), 0x0200);
 
             // Execute lda #$ef.
             step(state);
