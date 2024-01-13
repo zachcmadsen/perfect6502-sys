@@ -1,4 +1,11 @@
+use std::process::Command;
+
 fn main() {
+    Command::new("git")
+        .args(["submodule", "update", "--init"])
+        .status()
+        .unwrap();
+
     cc::Build::new()
         .include("perfect6502")
         .file("perfect6502/netlist_sim.c")
