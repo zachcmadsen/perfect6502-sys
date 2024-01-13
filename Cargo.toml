@@ -1,6 +1,6 @@
 [package]
 name = "perfect6502-sys"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 links = "perfect6502"
 build = "build.rs"
