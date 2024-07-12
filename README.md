@@ -7,12 +7,12 @@
 
 Bindings to [`perfect6502`][perfect6502].
 
-## Limitations
+## Disclaimer
 
-The only actively tested targets are `x86_64-unknown-linux-gnu` and
-`x86_64-pc-windows-msvc`. The bindings are generated manually
-(see [`generate_bindings.sh`][generate_bindings]) so they might be incorrect for
-other targets.
+The bindings work for targets `x86_64-unknown-linux-gnu` and
+`x86_64-pc-windows-msvc`. They may be incorrect for other targets since they're
+manually generated and stored in tree (see
+[`generate_bindings.sh`][generate_bindings]).
 
 ## Contributing
 
