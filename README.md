@@ -5,24 +5,25 @@
 [![docs.rs][docs_badge]][docs]
 [![license][license_badge]][license]
 
-`perfect6502-sys` provides bindings to [`perfect6502`][perfect6502].
+Bindings to [`perfect6502`][perfect6502].
 
-## Bindings
+## Binding generation
 
-The bindings were manually generated with
+The bindings are generated manually with `bindgen-cli`
+(see [`generate_bindings.sh`][generate_bindings]).
 
-`bindgen --use-core -o src/bindings.rs perfect6502/perfect6502.h`
+Using bindgen as a library to generate bindings on-the-fly would be better, but
+it requires every consumer to have `libclang`. The two targets I actively use,
+`x86_64-unknown-linux-gnu` and `x86_64-pc-windows-msvc`, have the same bindings
+so I'm not worried about incorrect bindings for now.
 
 ## Contributing
 
 Feel free to open an issue if you have ideas for improvements.
 
-## Resources
+## License
 
-The following were helpful for learning about how to create a sys crate:
-
-- https://medium.com/dwelo-r-d/wrapping-unsafe-c-libraries-in-rust-d75aeb283c65
-- https://kornel.ski/rust-sys-crate
+[MIT](https://github.com/zachcmadsen/perfect6502-sys/blob/main/LICENSE)
 
 <!-- Badges -->
 
@@ -38,3 +39,4 @@ The following were helpful for learning about how to create a sys crate:
 <!-- Links -->
 
 [perfect6502]: https://github.com/mist64/perfect6502
+[generate_bindings]: https://github.com/zachcmadsen/perfect6502-sys/blob/main/generate_bindings.sh
