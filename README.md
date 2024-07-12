@@ -5,7 +5,7 @@
 [![docs.rs][docs_badge]][docs]
 [![license][license_badge]][license]
 
-Bindings to [`perfect6502`][perfect6502].
+Rust bindings to [`perfect6502`][perfect6502].
 
 ## Disclaimer
 
