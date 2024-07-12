@@ -7,15 +7,12 @@
 
 Bindings to [`perfect6502`][perfect6502].
 
-## Binding generation
+## Limitations
 
-The bindings are generated manually with `bindgen-cli`
-(see [`generate_bindings.sh`][generate_bindings]).
-
-Using bindgen as a library to generate bindings on-the-fly would be better, but
-it requires every consumer to have `libclang`. The two targets I actively use,
-`x86_64-unknown-linux-gnu` and `x86_64-pc-windows-msvc`, have the same bindings
-so I'm not worried about incorrect bindings for now.
+The only actively tested targets are `x86_64-unknown-linux-gnu` and
+`x86_64-pc-windows-msvc`. The bindings are generated manually
+(see [`generate_bindings.sh`][generate_bindings]) so they might be incorrect for
+other targets.
 
 ## Contributing
 
