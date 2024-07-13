@@ -24,7 +24,7 @@ Feel free to open an issue if you have ideas for improvements.
 
 <!-- Badges -->
 
-[ci_badge]: https://github.com/zachcmadsen/perfect6502-sys/workflows/CI/badge.svg?branch=main
+[ci_badge]: https://github.com/zachcmadsen/perfect6502-sys/workflows/CI/badge.svg
 [ci]: https://github.com/zachcmadsen/perfect6502-sys/actions?query=branch%3Amain
 [crate_badge]: https://img.shields.io/crates/v/perfect6502-sys.svg
 [crate]: https://crates.io/crates/perfect6502-sys
