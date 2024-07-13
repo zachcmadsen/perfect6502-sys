@@ -11,6 +11,15 @@ repository = "https://github.com/zachcmadsen/perfect6502-sys"
 readme = "README.md"
 keywords = ["6502", "perfect6502"]
 categories = ["external-ffi-bindings"]
+include = [
+	"src/**/*",
+	"build.rs",
+	"perfect6502/*.h",
+	"perfect6502/netlist_sim.c",
+	"perfect6502/perfect6502.c",
+	"LICENSE",
+	"README.md",
+]
 
 [build-dependencies]
 cc = "1.0"
