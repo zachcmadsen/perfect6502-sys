@@ -9,7 +9,7 @@ Rust bindings to [`perfect6502`][perfect6502].
 
 ## Disclaimer
 
-The bindings work for targets `x86_64-unknown-linux-gnu` and
+The bindings have only been tested for targets `x86_64-unknown-linux-gnu` and
 `x86_64-pc-windows-msvc`. They may be incorrect for other targets since they're
 manually generated and stored in tree (see
 [`generate_bindings.sh`][generate_bindings]).
